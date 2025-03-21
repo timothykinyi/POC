@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sacco Member Registration</title>
+  <link rel="stylesheet" href="css/Registration.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Sacco Member Registration</h1>
+    <form id="registerForm">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Full Name" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="memberId" placeholder="Member ID" required />
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="phone" placeholder="Phone Number" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="nationalId" placeholder="National ID Number" required />
+      </div>
+      <div class="form-group">
+        <input type="date" id="dob" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="occupation" placeholder="Occupation" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="address" placeholder="Address" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="kinName" placeholder="Next of Kin Name" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="kinPhone" placeholder="Next of Kin Phone Number" required />
+      </div>
+      <div class="form-group">
+        <select id="membershipType" required>
+          <option value="" disabled selected>Select Membership Type</option>
+          <option value="Regular">Regular</option>
+          <option value="Premium">Premium</option>
+          <option value="Corporate">Corporate</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <div id="message"></div>
+  </div>
+
+  <script src="js/Registration.js"></script>
+</body>
+</html>

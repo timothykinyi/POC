@@ -1,0 +1,46 @@
+{
+  "members": [
+    {
+      "id": "74d0",
+      "name": "Timothy",
+      "memberId": "MBR01",
+      "email": "kinyi9461@gmail.com",
+      "phone": "0742243421",
+      "nationalId": "11111",
+      "dob": "2005-03-21",
+      "occupation": "IT expert",
+      "address": "Thika",
+      "kinName": "me",
+      "kinPhone": "0742243421",
+      "membershipType": "Regular",
+      "password": "MBR01",
+      "shares": 5,
+      "totalSavings": 0,
+      "dividends": 3.06,
+      "loans": [
+        {
+          "amount": 0,
+          "status": "Rejected"
+        }
+      ],
+      "savings": 200
+    }
+  ],
+  "admins": [
+    {
+      "id": "36f3",
+      "name": "timothy",
+      "email": "kinyi@gmail.com",
+      "password": "123456789p"
+    }
+  ],
+  "company": [
+    {
+      "id": "1",
+      "totalMoneyAvailable": 99995,
+      "totalProfit": 5,
+      "dividendPercentage": 12,
+      "savingInterestRate": 12
+    }
+  ]
+}

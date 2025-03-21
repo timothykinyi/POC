@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome, <span id="memberName">Member</span></h1>
+    </header>
+
+    <section class="account-summary">
+      <h2>Account Summary</h2>
+      <div class="summary-cards">
+        <div class="card">
+          <h3>Shares</h3>
+          <p id="sharesAmount">0</p>
+        </div>
+        <div class="card">
+          <h3>Dividends</h3>
+          <p id="dividendsAmount">0</p>
+        </div>
+        <div class="card">
+          <h3>Loans</h3>
+          <p id="loansAmount">0</p>
+        </div>
+        <div class="card">
+          <h3>Savings</h3>
+          <p id="savingsAmount">0</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="loan-management">
+      <h2>Loan Management</h2>
+      <form id="loanApplicationForm">
+        <input type="number" id="loanAmount" placeholder="Loan Amount" required />
+        <button type="submit">Apply for Loan</button>
+      </form>
+      <h3>Loan Status</h3>
+      <ul id="loanStatusList"></ul>
+    </section>
+
+    <section class="savings-management">
+      <h2>Savings Management</h2>
+      <form id="savingsForm">
+        <input type="number" id="savingsAmountInput" placeholder="Amount" required />
+        <button type="submit" data-action="deposit">Deposit</button>
+        <button type="submit" data-action="withdraw">Withdraw</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

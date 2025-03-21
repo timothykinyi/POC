@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Sacco Management</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <header>
+      <h1>Admin Panel - Sacco Management</h1>
+      <nav>
+        <button id="loadMembersBtn">Load Members & Totals</button>
+        <button id="registerMemberBtn" onclick="window.location.href='register.html'">Register New Member</button>
+      </nav>
+    </header>
+
+    <section class="members-section">
+      <h2>Members List</h2>
+      <div id="membersList">
+        <!-- Members will be loaded here -->
+      </div>
+    </section>
+
+    <section class="loan-section">
+      <h2>Manage Loans</h2>
+      <div id="loansList">
+        <!-- Pending loans will be displayed here -->
+      </div>
+    </section>
+
+    <section class="company-records">
+      <h2>Company Records & Auto Dividend Allocation</h2>
+      <form id="companyForm">
+        <!-- Total money available field is required to compute totals -->
+        <input type="number" id="totalMoneyAvailable" placeholder="Total Money Available" required />
+        <input type="number" id="totalProfit" placeholder="Total Profit" required />
+        <input type="number" id="dividendPercentage" placeholder="Dividend Percentage" required />
+        <input type="number" id="savingInterestRate" placeholder="Saving Interest Rate (%)" required />
+        <button type="submit">Update Company & Allocate Dividends</button>
+      </form>
+    </section>
+    
+    <section class="totals-section">
+      <h2>Overall Totals</h2>
+      <div id="overallTotals">
+        <!-- Totals will be displayed here -->
+      </div>
+    </section>
+
+    <section class="admin-registration-section">
+        <h2>Register New Admin</h2>
+        <form id="registerAdminForm">
+          <input type="text" id="adminName" placeholder="Full Name" required />
+          <input type="email" id="adminEmail" placeholder="Email" required />
+          <input type="password" id="adminPassword" placeholder="Password" required />
+          <button type="submit">Register Admin</button>
+        </form>
+    </section>
+      
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
